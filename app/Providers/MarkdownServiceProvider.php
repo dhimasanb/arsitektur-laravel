@@ -27,5 +27,9 @@ class MarkdownServiceProvider extends ServiceProvider
         $this->app->singleton('markdown', function() {
           return $this->markdown;
         });
+
+        $this->app->bind('apa itu laravel?', function() {
+        return 'Laravel adalah framework Laravel paling keren dan elegan.';
+        });
     }
 }
