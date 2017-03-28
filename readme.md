@@ -16,7 +16,9 @@ dan dimanapun dari aplikasi.
 Class dependency dalam pemrograman adalah kondisi dimana kita membutuhkan class lain untuk
 membuat object dari sebuah class.
 
-### Facades 
+### Facades
+
+### Contracts 
 
 ## Terima Kasih
 
