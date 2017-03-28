@@ -3,15 +3,20 @@ namespace App;
 
 class Customer
 {
-    private $dompet;
+    private $payment;
 
-    public function __construct(Dompet $dompet)
+    public function __construct(PaymentMethod $payment)
     {
-        $this->dompet = $dompet;
+        $this->payment = $payment;
     }
 
-    public function cekDompet()
+    public function setPayment(PaymentMethod $payment)
     {
-        return $this->dompet->cekIsi();
+        $this->payment = $payment;
+    }
+    
+    public function cekPayment()
+    {
+        return $this->payment->cekIsi();
     }
 }
