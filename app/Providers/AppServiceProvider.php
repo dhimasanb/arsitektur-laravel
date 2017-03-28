@@ -28,9 +28,12 @@ class AppServiceProvider extends ServiceProvider
           'App\Services\Registrar'
       );
 
-      $this->app->bind(
-          'App\PaymentMethod',
-          'App\KartuKredit'
-      );
+      $cc = new \App\KartuKredit(2000, '42542353545');
+      $this->app->instance('App\PaymentMethod', $cc);
+
+      // $this->app->bind(
+      //     'App\PaymentMethod',
+      //     'App\KartuKredit'
+      // );
     }
 }
