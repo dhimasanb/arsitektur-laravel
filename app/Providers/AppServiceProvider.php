@@ -36,6 +36,11 @@ class AppServiceProvider extends ServiceProvider
                 ->needs('App\PaymentMethod')
                 ->give('App\KartuKredit');
 
+      $this->app->singleton('App\KartuKredit', function($app)
+      {
+        return new \App\KartuKredit;
+      });
+
       // $this->app->bind(
       //     'App\PaymentMethod',
       //     'App\KartuKredit'
