@@ -10,6 +10,7 @@ class KartuKredit implements PaymentMethod
   {
       $this->saldo = $saldo;
       $this->cardNumber = $cardNumber;
+      echo 'membuat kartu kredit...';
   }
 
   public function cekIsi()
